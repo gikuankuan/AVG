@@ -1,79 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>story</title>
-    <script src="js/sweetalert2.all.min.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
 
-  <body>
-    <script>
-      //    let name;
-      //    Swal.fire({
-      //   title: '歡迎來到魔鏡的世界，準備要拯救全世界了嗎',
-      //   input: 'text',
-      //   inputValue: '大雄',
-      //   showLoaderOnConfirm: true,
-      //   confirmButtonText: '我取好了',
-      //   cancelButtonText: '略過',
-      //   showCancelButton: true,
-      //   allowOutsideClick: false
-      // }).then(start)
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>story</title>
+  <script src="js/sweetalert2.all.min.js"></script>
+</head>
 
-      // function start() {
-      // let mission;
-      // Swal.fire({
-      //   title: `${name}，準備好穿越魔鏡了嘛！`,
-      //   text: "路上會有許多道具可以使用，但也可能要靠赤手空拳喔",
-      //   confirmButtonText: 'ＧＯＧＯ',
-      //   cancelButtonText: '無論如何還是ＧＯ！',
-      //   showCancelButton: true,
-      //   allowOutsideClick: false,
-      //   imageUrl: '',
-      //   imageHeight: 300,
-      //   confirmButtonColor: '#3085d6',
-      //   cancelButtonColor: '#d33'
-      // })}
+<body>
+  <script>
+    //    let name;
+    //    Swal.fire({
+    //   title: '歡迎來到魔鏡的世界，準備要拯救全世界了嗎',
+    //   input: 'text',
+    //   inputValue: '大雄',
+    //   showLoaderOnConfirm: true,
+    //   confirmButtonText: '我取好了',
+    //   cancelButtonText: '略過',
+    //   showCancelButton: true,
+    //   allowOutsideClick: false
+    // }).then(start)
+
+    // function start() {
+    // let mission;
+    // Swal.fire({
+    //   title: `${name}，準備好穿越魔鏡了嘛！`,
+    //   text: "路上會有許多道具可以使用，但也可能要靠赤手空拳喔",
+    //   confirmButtonText: 'ＧＯＧＯ',
+    //   cancelButtonText: '無論如何還是ＧＯ！',
+    //   showCancelButton: true,
+    //   allowOutsideClick: false,
+    //   imageUrl: '',
+    //   imageHeight: 300,
+    //   confirmButtonColor: '#3085d6',
+    //   cancelButtonColor: '#d33'
+    // })}
+    Swal.fire({
+      imageUrl: "./img/在下哈特利.jpg",
+      confirmButtonText: '虫合？',
+      imageHeight: 300,
+      imageAlt: "A tall image",
+      title: `膩膩，在下哈特利是也`,
+      text: `忍者哈特利甘藏，正式上場囉。飛越高山、穿過深谷、他來到了我們的小鎮上。哈特利來了！哈特利來了！!圓圓的大眼睛 彎彎的八字嘴!臉頰上有圈圈 穿著忍者服裝!他敏捷的動作連眼睛都跟不上!發射的手裡劍 所向無敵!是也是也 忍者哈特利是也!他是快樂的好伙伴!他是忍者是也!忍者是也!是也是也........`
+    }).then(a);
+
+
+    function a() {
       Swal.fire({
-        imageUrl: "./img/哈特力.jpg",
-        confirmButtonText: '虫合？',
-        imageHeight: 300,
-        imageAlt: "A tall image",
-        title: `膩膩，在下哈特利是也`,
-        text: `忍者哈特利甘藏 正式上場囉
-            飛越高山 穿過深谷 他來到了我們的小鎮上
-            哈特利來了 哈特利來了
-            圓圓的大眼睛 彎彎的八字嘴
-            臉頰上有圈圈 穿著忍者服裝
-            他敏捷的動作連眼睛都跟不上
-            發射的手裡劍 所向無敵
-            是也是也 忍者哈特利是也
-            他是快樂的好伙伴
-            他是忍者是也
-            忍者是也
-            是也是也 Yes~
-            ........`
-      }).then(function(){
-        Swal.fire({
         imageUrl: "./img/哈特力.jpg",
         confirmButtonText: '怪人....趕快離開',
         imageHeight: 300,
         imageAlt: "A tall image",
-        title: `緊急事態`,
-        text: `聽完在下唱完我的主題曲後，對在下應該有更多的了解吧`})
-      }
-      ).then(function(){
-        Swal.fire({
-        imageUrl: "./img/忍術吐槽術.jpg",
+        title: `你好，在下哈特利`,
+        text: `聽完在下唱完我的主題曲後，對在下應該有更多的了解吧`,
+        backdrop: `
+                  rgba(0,0,123,0.4)
+                  left top
+                  no-repeat`
+      }).then(b);
+    }
+
+    function b() {
+      Swal.fire({
+        imageUrl: "./img/搞鬼.png",
         confirmButtonText: '好像似懂非懂',
         imageHeight: 300,
         imageAlt: "A tall image",
-        title: `緊急事態`,
-        text: `聽完在下唱完我的主題曲後，對在下應該有更多的了解吧`})
-      }
-      );
-    </script>
-  </body>
+        text: `怎麼可能不認識在下是也`
+      }).then(c);
+    }
+
+
+    function c() {
+      Swal.fire({
+        imageUrl: "./img/忍術學習.jpg",
+        confirmButtonText: '好吧...讓我見識...',
+        cancelButtonText: '看我用螺旋丸打爆你',
+        allowOutsideClick: false,
+        showCancelButton: true,
+        imageHeight: 300,
+        imageAlt: "A tall image",
+        text: `就讓在下帶你見識見識我的忍術吧！`
+      }).then((result) => {
+        if (result.dismiss === 'cancel') {
+          Swal.fire({
+            title: `等你準備好挑戰再來吧！`,
+            allowOutsideClick: false,
+            imageUrl: 'files/11.jpg',
+            imageHeight: 300
+          }).then(c);
+        } else Swal.fire({
+        title: `第一站　－　木ＹＡ忍者村`,
+        allowOutsideClick: false,
+        imageUrl: './img/GOGO.jpg',
+        imageHeight: 300,
+        confirmButtonText: 'ＧＯＧＯ！',
+      }).then(d);
+      })
+    }
+
+
+    function d(){
+      
+
+
+    }
+  </script>
+</body>
+
 </html>
