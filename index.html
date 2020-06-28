@@ -86,27 +86,169 @@
       }).then((result) => {
         if (result.dismiss === 'cancel') {
           Swal.fire({
-            title: `等你準備好挑戰再來吧！`,
-            allowOutsideClick: false,
-            imageUrl: 'files/11.jpg',
-            imageHeight: 300
+            title: `🧡🧡🧡🧡不要那麼無情🤎🤎🤎🤎`,
+            imageUrl: './img/色誘.jpg',
+            imageHeight: 300,
+            confirmButtonText: '再給你一次考慮機會'
           }).then(c);
         } else Swal.fire({
-        title: `第一站　－　木ＹＡ忍者村`,
-        allowOutsideClick: false,
-        imageUrl: './img/GOGO.jpg',
-        imageHeight: 300,
-        confirmButtonText: 'ＧＯＧＯ！',
-      }).then(d);
+          title: `第一站　－　木ＹＡ忍者村`,
+          allowOutsideClick: false,
+          imageUrl: './img/GOGO.jpg',
+          imageHeight: 300,
+          confirmButtonText: 'ＧＯＧＯ！',
+        }).then(d);
       })
     }
 
-
-    function d(){
+//第一關
+    function d() {
+      Swal.fire({
+        title: "木YA的考驗-中忍考試",
+        text: "一年一度的中忍考試，請考生們使出最拿手的一招，考官會從中選出一名優秀人才晉升為木YA的中忍",
+        confirmButtonText: '考試甚麼的麻煩死了，自己畫一張證書好了',
+        cancelButtonText: '忍術-豪火球之術',
+        showCancelButton: true,
+        allowOutsideClick: false,
+        imageUrl: './img/木ya.jpg',
+        imageHeight: 300,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33'
+      }).then((result) => {
+        if (result.dismiss === 'cancel') {
+          Swal.fire({
+            
+            title: "還太嫩了...",
+            text: `沒想到...被識破了`,
+            confirmButtonText: "重新來過",
+            allowOutsideClick: false,
+            imageUrl: "./img/g1_lose.jpg",
+            imageHeight: 300
+          }).then(d);
+        }
+        else {
+          Swal.fire({ 
+            title: "簡單啦簡單啦",
+            text: "佐賀忍術還是比木YA高明辣",
+            confirmButtonText: '前往下個忍者村！',
+            allowOutsideClick: false,
+            imageUrl: './img/g1_win.jpg',
+            imageHeight: 300
+          }).then(e);
+        }})}
       
 
+        //第二關
 
-    }
+
+        function e() {
+      Swal.fire({
+        title: "鬼殺隊",
+        text: "又有人要來挑戰鬼殺隊炎柱嗎",
+        cancelButtonText: '水之呼吸...壹之型',
+        confirmButtonText: '這大叔是誰...',
+        showCancelButton: true,
+        allowOutsideClick: false,
+        imageUrl: './img/g2.jpg',
+        imageHeight: 300,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33'
+      }).then((result) => {
+        if (result.dismiss === 'cancel') {
+          Swal.fire({
+            
+            title: "errrr",
+            text: `滑倒了...`,
+            confirmButtonText: "滑鐵盧",
+            allowOutsideClick: false,
+            imageUrl: "./img/g2_lose.jpg",
+            imageHeight: 300
+          }).then(e);
+        }
+        else {
+          Swal.fire({ 
+            title: "簡單啦簡單啦",
+            text: "不要理會這個怪大叔",
+            confirmButtonText: '溜之大吉！酸！',
+            allowOutsideClick: false,
+            imageUrl: './img/g2_win.jpg',
+            imageHeight: 300
+          }).then(f);
+        }})}
+//第三關
+
+function f() {
+      Swal.fire({
+        title: "不知名的忍者村",
+        text: "問：對忍者來說最重要的是...(os:總算回到忍者系列了)",
+        cancelButtonText: '堅持忍道！',
+        confirmButtonText: '在下乃哈特利甘藏是也',
+        showCancelButton: true,
+        allowOutsideClick: false,
+        imageUrl: './img/g3.jpg',
+        imageHeight: 300,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33'
+      }).then((result) => {
+        if (result.dismiss === 'cancel') {
+          Swal.fire({
+            
+            title: "忍道．．．",
+            text: `新世代忍者早就沒在遵從忍道!`,
+            confirmButtonText: "這不是極富正義的忍者題材嗎．．．？",
+            allowOutsideClick: false,
+            imageUrl: "./img/g3_lose.jpg",
+            imageHeight: 300
+          }).then(f);
+        }
+        else {
+          Swal.fire({ 
+            title: "少爺",
+            text: "居然是哈特利少爺，小的不才有眼不識泰山",
+            confirmButtonText: '這就是有錢人的力量',
+            allowOutsideClick: false,
+            imageUrl: './img/g3_win.jpg',
+            imageHeight: 300
+          }).then(g);
+        }})}
+
+        //第四關
+
+        function g() {
+      Swal.fire({
+        title: "不知名的忍者村",
+        text: "問：對忍者來說最重要的是...(os:總算回到忍者系列了)",
+        cancelButtonText: '堅持忍道！',
+        confirmButtonText: '在下乃哈特利甘藏是也',
+        showCancelButton: true,
+        allowOutsideClick: false,
+        imageUrl: './img/g3.jpg',
+        imageHeight: 300,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33'
+      }).then((result) => {
+        if (result.dismiss === 'cancel') {
+          Swal.fire({
+            
+            title: "忍道．．．",
+            text: `新世代忍者早就沒在遵從忍道!`,
+            confirmButtonText: "這不是極富正義的忍者題材嗎．．．？",
+            allowOutsideClick: false,
+            imageUrl: "./img/g3_lose.jpg",
+            imageHeight: 300
+          }).then(g);
+        }
+        else {
+          Swal.fire({ 
+            title: "少爺",
+            text: "居然是哈特利少爺，小的不才有眼不識泰山",
+            confirmButtonText: '這就是有錢人的力量',
+            allowOutsideClick: false,
+            imageUrl: './img/g3_win.jpg',
+            imageHeight: 300
+          }).then(g);
+        }})}
+
   </script>
 </body>
 
