@@ -10,33 +10,11 @@
 </head>
 
 <body>
-  <script>
-    //    let name;
-    //    Swal.fire({
-    //   title: '歡迎來到魔鏡的世界，準備要拯救全世界了嗎',
-    //   input: 'text',
-    //   inputValue: '大雄',
-    //   showLoaderOnConfirm: true,
-    //   confirmButtonText: '我取好了',
-    //   cancelButtonText: '略過',
-    //   showCancelButton: true,
-    //   allowOutsideClick: false
-    // }).then(start)
 
-    // function start() {
-    // let mission;
-    // Swal.fire({
-    //   title: `${name}，準備好穿越魔鏡了嘛！`,
-    //   text: "路上會有許多道具可以使用，但也可能要靠赤手空拳喔",
-    //   confirmButtonText: 'ＧＯＧＯ',
-    //   cancelButtonText: '無論如何還是ＧＯ！',
-    //   showCancelButton: true,
-    //   allowOutsideClick: false,
-    //   imageUrl: '',
-    //   imageHeight: 300,
-    //   confirmButtonColor: '#3085d6',
-    //   cancelButtonColor: '#d33'
-    // })}
+  <iframe width="100%" height="920px" src="https://www.youtube.com/embed/p9_doM8hbs0?controls=0&autoplay=1&loop=10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <script>
+   
     Swal.fire({
       imageUrl: "./img/在下哈特利.jpg",
       confirmButtonText: '虫合？',
@@ -138,7 +116,7 @@
         }})}
       
 
-        //第二關
+//第二關
 
 
         function e() {
@@ -212,43 +190,57 @@ function f() {
           }).then(g);
         }})}
 
-        //第四關
+//第四關
 
         function g() {
-      Swal.fire({
-        title: "不知名的忍者村",
-        text: "問：對忍者來說最重要的是...(os:總算回到忍者系列了)",
-        cancelButtonText: '堅持忍道！',
-        confirmButtonText: '在下乃哈特利甘藏是也',
-        showCancelButton: true,
-        allowOutsideClick: false,
-        imageUrl: './img/g3.jpg',
+          Swal.fire({
+        title: `忍術的部分.?`,
+        imageUrl: "./img/g4.jpg",
+        confirmButtonText: '再相信哈特利最後一次好了.....',
         imageHeight: 300,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33'
+        imageAlt: "A tall image",
+        text: `跟忍術好像擦不上邊啊?`
+      }).then(h);}
+
+
+      function h() {
+      Swal.fire({
+        imageUrl: "./img/g5.jpg",
+        confirmButtonText: 'JJJJ格是',
+        cancelButtonText: '???????',
+        allowOutsideClick: false,
+        showCancelButton: true,
+        imageHeight: 300,
+        imageAlt: "A tall image",
+        text: `吃我這招！!！`
       }).then((result) => {
         if (result.dismiss === 'cancel') {
           Swal.fire({
-            
-            title: "忍道．．．",
-            text: `新世代忍者早就沒在遵從忍道!`,
-            confirmButtonText: "這不是極富正義的忍者題材嗎．．．？",
-            allowOutsideClick: false,
-            imageUrl: "./img/g3_lose.jpg",
-            imageHeight: 300
-          }).then(g);
-        }
-        else {
-          Swal.fire({ 
-            title: "少爺",
-            text: "居然是哈特利少爺，小的不才有眼不識泰山",
-            confirmButtonText: '這就是有錢人的力量',
-            allowOutsideClick: false,
-            imageUrl: './img/g3_win.jpg',
-            imageHeight: 300
-          }).then(g);
-        }})}
+            title: `原來這才是忍術的真諦`,
+            imageUrl: './img/g5_lose.jpg',
+            imageHeight: 300,
+            confirmButtonText: '太厲害了...'
+          }).then(c);
+        } else Swal.fire({
+          title: `原來這才是忍術的真諦`,
+          allowOutsideClick: false,
+          imageUrl: './img/g5_win.jpg',
+          imageHeight: 300,
+          confirmButtonText: '太美妙了！',
+        }).then(i);
+      })
+    }
 
+
+    function i() {
+          Swal.fire({
+        title: `忍術的部分.?`,
+        imageUrl: "./img/g6emd.jpg",
+        confirmButtonText: '輪迴再玩一次吧嘿嘿嘿',
+        imageHeight: 300,
+        imageAlt: "A tall image",
+        text: `終點就是起點`
+      }).then(a);}
   </script>
 </body>
 
